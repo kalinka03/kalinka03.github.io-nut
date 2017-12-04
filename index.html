@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
 	<meta charset="UTF-8">
 	<title>arts</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="style/fonts.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/fonts.css">
 	<link rel="stylesheet" href="css/media.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<script>
+		$(document).ready(function(){
+			$(".menu").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+	</script>
 	<header>
-
 		<div class="header_container">
 			<div class="wrapper">
 				<div class="container">
 					<div class="row">
 						<div class="fluid">
-							<div class="col-sm-12 col-xs-10">
+							<div class="col-sm-12 col-xs-12">
 								<div class="menu clearfix">
 									<ul class="menu-nav">
 										<li>
-											<a href="#">СОСТАВ</a>
+											<a href="#composition">СОСТАВ</a>
 										</li>
 										<li>
-											<a href="#">ВИДЕО</a>
+											<a href="#video">ВИДЕО</a>
 										</li>
 										<li>
-											<a href="#">МУЗЫКА</a>
+											<a href="#music">МУЗЫКА</a>
 										</li>
 										<li>
-											<a href="#">ФОТО</a>
+											<a href="#foto">ФОТО</a>
 										</li>
 										<li>
-											<a href="#">КОНТАКТЫ</a>
+											<a href="#contacts">КОНТАКТЫ</a>
 										</li>
 									</ul>
 								</div>
@@ -70,84 +81,83 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12  col-xs-12">
 					<div class="site-name">
-						<img src="image/logo.png">
+						<img src="image/logo.png" alt="Картинка не найдена">
 					</div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12  col-xs-12">
 					<div class="col-line">			
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
-	<div class="container_musical_instruments">
+	<div  id="composition" class="container_musical_instruments">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-2 col-xs-6">
 					<div class="nature">
-						<img src="image/mus1.png">
+						<img src="image/electric-guitar.png" alt="Картинка не найдена">
 					</div>
 					<p class="info name">СТЕПАН 
 					</p>
 					<p class="info">БАС </p>
-					<div class="nature2">
-						<img src="image/orex.png">
+					<div class="nature-img">
+						<img src="image/chestnut.png" alt="Картинка не найдена">
 					</div>
 				</div>
 				<div class="col-sm-2 col-xs-6">
 					<div class="nature">
-						<img src="image/kate-sister.png">
+						<img src="image/microphone.png" alt="Картинка не найдена">
 					</div>
 					<p class="info name">КАТЯ СЕСТРА
 					</p>
 					<p class="info">ВОКАЛ </p>
-					<div class="nature2">
-						<img src="image/nut.png">
+					<div class="nature-img">
+						<img src="image/pistachios.png" alt="Картинка не найдена">
 					</div>
 				</div>
 				<div class="col-sm-2 col-xs-6">
 					<div class="nature">
-						<img src="image/leonid.png">
+						<img src="image/leonid.png" alt="Картинка не найдена">
 					</div>
 					<p class="info name">ЛЕОНИД
 					</p>
 					<p class="info">БАРАБАНЫ</p>
-					<div class="nature2">
-						<img src="image/orex1.png">
+					<div class="nature-img">
+						<img src="image/nut.png" alt="Картинка не найдена">
 					</div>
 				</div>
 				<div class="col-sm-2 col-xs-6">
 					<div class="nature">
-						<img src="image/guitar.png">
+						<img src="image/guitar.png" alt="Картинка не найдена">
 					</div>
 					<p class="info name">ДЕНИС
 					</p>
 					<p class="info">ГИТАРА</p>
-					<div class="nature2">
-						<img src="image/nut2.png">
+					<div class="nature-img">
+						<img src="image/acorn.png" alt="Картинка не найдена">
 					</div>
 				</div>
 				<div class="col-sm-2 col-xs-6">
 					<div class="nature">
-						<img src="image/trumbet.png">
+						<img src="image/trumbet.png" alt="Картинка не найдена">
 					</div>
-					<p class="info name">ЮРАФА#
+					<p class="info name">ЮРА ФА#
 					</p>
 					<p class="info">ТРУБА</p>
-					<div class="nature2">
-						<img src="image/nut3.png">
+					<div class="nature-img">
+						<img src="image/peanut.png" alt="Картинка не найдена">
 					</div>
 				</div>
 				<div class="col-sm-2 col-xs-6">
 					<div class="nature">
-						<img src="image/flute.png">
+						<img src="image/flute.png" alt="Картинка не найдена">
 					</div>
 					<p class="info name">МАША
 					</p>
 					<p class="info">ФЛЕЙТА</p>
-					<div class="nature2">
-						<img src="image/nut4.png">
+					<div class="nature-img">
+						<img src="image/coconut.png" alt="Картинка не найдена">
 					</div>
 				</div>
 				<div class="col-sm-12 col-xs-12">
@@ -157,33 +167,50 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-music">
+	<div id="music" class="container-music">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-xs-12">
 					<p class="name-blok">МУЗЫКА</p>
+					<div class="container-audio">
+						<audio  src="Песенка.mp3" controls></audio>
+					</div>
+					<div class="container-audio">
+						<audio  src="Песенка.mp3" controls></audio>
+					</div>
+					<div class="container-audio">
+						<audio  src="Песенка.mp3" controls></audio>
+					</div>
+					<div class="container-audio">
+						<audio  src="Песенка.mp3" controls></audio>
+					</div>
+					<div class="container-audio">
+						<audio  src="Песенка.mp3" controls></audio>
+					</div>
 					<p class="name-blok"> <a  href=""> ЕЩЁ></a>
 					</p>
 					<div class="col-line">			
 					</div>					
 				</div>
 			</div>
-			<div class="row">
+			<div  id="video" class="row">
 				<div class="col-sm-12 col-xs-12">
 					<p class="name-blok">ВИДЕО</p>
 				</div>
 				<div class="col-sm-12 col-xs-12">
 					<div class="video">
-						<iframe width="490" height="320" src=http://www.youtube.com/embed/DkaUsBwe0fo
-						frameborder="0" allowfullscreen></iframe>
-					</div>			
+						<iframe src="https://vk.com/video_ext.php?oid=-155662815&id=456239027&hash=1de70567e9e9640a" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+					</div>	
+					<p class="name-blok"> <a  href="https://vk.com/videos-155662815">СМОТРЕТЬ ВСЕ></a>
+					</p>		
 					<div class="col-line">					
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>	
-	<div class="container-foto">
+	<div id="foto" class="container-foto">
 		<div class="col-sm-12 col-xs-12">
 			<p class="name-blok">ФОТО</p>
 		</div>
@@ -195,19 +222,28 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-xs-12">
+				<div id="contacts" class="col-sm-12 col-xs-12">
 					<p class="name-blok contact">КОНТАКТЫ</p>
 					<div class="col-line">			
 					</div>
-					<div class="orex-footer">
-						<a href="#">
-							<img src="image/footer.png">
-						</a>
-					</div>
-					<div class="col-line last">		
+					<div class="own-footer clearfix">
+						<div class="orex-footer">
+							<img src="image/nut-footer.png" alt="Картинка не найдена">
+						</div>
+						<div class="grupp-name">
+							<a href="https://vk.com/videos-155662815">
+								VK.COM/OREKHOVY_TREKH
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="col-line last">	
+				</div>
+			</div>	
 		</div>
 	</footer>	
 </body>
