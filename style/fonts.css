@@ -1,22 +1,18 @@
-
 @font-face {
-  font-family: 'OpenSansLight';
-  src: url('../fonts/OpenSansLight/OpenSansLight.eot');
-  src: local('☺'), url('../fonts/OpenSansLight/OpenSansLight.woff') format('woff'), url('../fonts/OpenSansLight/OpenSansLight.ttf') format('truetype'), url('../fonts/OpenSansLight/OpenSansLight.svg') format('svg');
+  font-family: 'TTMastersDEMOBlack';
+  src: local('☺'),  url('../fonts/TTMastersDEMOBlack.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'OpenSansBold';
-  src: url('../fonts/OpenSansBold/OpenSansBold.eot');
-  src: local('☺'), url('../fonts/OpenSansBold/OpenSansBold.woff') format('woff'), url('../fonts/OpenSansBold/OpenSansBold.ttf') format('truetype'), url('../fonts/OpenSansBold/OpenSansBold.svg') format('svg');
+  font-family: 'TT_Masters_DEMO_Rough_Thin';
+  src: local('☺'),  url('../fonts/TT_Masters_DEMO_Rough_Thin.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Open_Sans';
-  src: url('../fonts/Open_Sans/Open_Sans.eot');
-  src: local('☺'), url('../fonts/Open_Sans/Open_Sans.woff') format('woff'), url('../fonts/Open_Sans/Open_Sans.ttf') format('truetype'), url('../fonts/Open_Sans/Open_Sans.svg') format('svg');
+  font-family: 'TT_Masters_DEMO_Birds_Regular';
+  src: local('☺'),  url('../fonts/TT_Masters_DEMO_Birds_Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
